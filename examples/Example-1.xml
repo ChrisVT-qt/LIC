@@ -1,0 +1,20 @@
+<lic>
+  <vectorfield>
+    <parameters>
+      <parameter name="bla" value="0"/>
+    </parameters>
+    <formulas>
+      <x>sin(x+y)</x>
+      <y>sin(x-y)</y>
+    </formulas>
+  </vectorfield>
+  <background type="gaussian" sigma="3" seed="3244422"/>
+  <image steps="25">
+    <ranges>
+      <range variable="x" min="-10" max="+10"/>
+      <range variable="y" min="-10" max="+10"/>
+    </ranges>
+    <resolution x="1024" y="1024"/>
+    <output filename="Example-1.png"/>
+  </image>
+</lic>

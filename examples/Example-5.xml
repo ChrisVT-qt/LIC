@@ -1,0 +1,20 @@
+<lic>
+  <vectorfield>
+    <parameters>
+      <parameter name="bla" value="0"/>
+    </parameters>
+    <formulas>
+      <x>x*(sqrt(x*x+y*y)-1)/(sqrt(x*x+y*y+0.05)+1)</x>
+      <y>-y*(sqrt(x*x+y*y)-1)/(sqrt(x*x+y*y+0.05)+1)</y>
+    </formulas>
+  </vectorfield>
+  <background type="white noise" cutoff="0.5" seed="6"/>
+  <image steps="5">
+    <ranges>
+      <range variable="x" min="-5" max="5"/>
+      <range variable="y" min="-5" max="5"/>
+    </ranges>
+    <resolution x="1024" y="1024"/>
+    <output filename="Example-5.png"/>
+  </image>
+</lic>

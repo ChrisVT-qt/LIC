@@ -1,0 +1,20 @@
+<lic>
+  <vectorfield>
+    <parameters>
+      <parameter name="bla" value="0"/>
+    </parameters>
+    <formulas>
+      <x>sin(1/(x*x + y*y + 0.05))</x>
+      <y>-cos(1/(x*x + y*y + 0.05))</y>
+    </formulas>
+  </vectorfield>
+  <background type="gaussian" sigma="0.17"/>
+  <image steps="200">
+    <ranges>
+      <range variable="x" min="-0.5" max="+0.5"/>
+      <range variable="y" min="-0.5" max="+0.5"/>
+    </ranges>
+    <resolution x="1024" y="1024"/>
+    <output filename="Example-2.png"/>
+  </image>
+</lic>

@@ -1,0 +1,20 @@
+<lic>
+  <vectorfield>
+    <parameters>
+      <parameter name="bla" value="0"/>
+    </parameters>
+    <formulas>
+      <x>y + sin((x-2)^2) - cos((y+2)^2)</x>
+      <y>-x + sin((y-2)^2) + cos((x+2)^2)</y>
+    </formulas>
+  </vectorfield>
+  <background type="white noise" cutoff="0.8"/>
+  <image steps="20">
+    <ranges>
+      <range variable="x" min="-3" max="+3"/>
+      <range variable="y" min="-3" max="+3"/>
+    </ranges>
+    <resolution x="1024" y="1024"/>
+    <output filename="Example-3.png"/>
+  </image>
+</lic>
